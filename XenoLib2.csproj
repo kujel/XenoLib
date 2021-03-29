@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D06BF142-C971-41A4-A6D8-DD2BEEBBB6E2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XenoLib</RootNamespace>
+    <AssemblyName>XenoLib</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SDL2_C_Sharp">
+      <HintPath>..\..\SDL_C_Sharp\ClassLibrary1\bin\Debug\SDL2_C_Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animation.cs" />
+    <Compile Include="AnimationEngine.cs" />
+    <Compile Include="AutoTile.cs" />
+    <Compile Include="BulletCache.cs" />
+    <Compile Include="ClickMenu.cs" />
+    <Compile Include="CloseButton.cs" />
+    <Compile Include="CollisionMesh.cs" />
+    <Compile Include="ColourBank.cs" />
+    <Compile Include="CoolDown.cs" />
+    <Compile Include="Counter.cs" />
+    <Compile Include="CreationWindow.cs" />
+    <Compile Include="DataFileReader.cs" />
+    <Compile Include="DataGrid.cs" />
+    <Compile Include="DataLineGraph.cs" />
+    <Compile Include="DeulInput.cs" />
+    <Compile Include="DLS.cs" />
+    <Compile Include="DrawLine.cs" />
+    <Compile Include="DrawRects.cs" />
+    <Compile Include="DropDownList.cs" />
+    <Compile Include="Emblem.cs" />
+    <Compile Include="FieldEditor.cs" />
+    <Compile Include="FileExplorer.cs" />
+    <Compile Include="FogOfWar.cs" />
+    <Compile Include="Fraction.cs" />
+    <Compile Include="GameLogger.cs" />
+    <Compile Include="GenericBank.cs" />
+    <Compile Include="Helpers.cs" />
+    <Compile Include="HopPathFinder.cs" />
+    <Compile Include="HoykeysSystem.cs" />
+    <Compile Include="KeyBinder.cs" />
+    <Compile Include="KeyboardHandler.cs" />
+    <Compile Include="LayeredTileSys.cs" />
+    <Compile Include="ListMenu.cs" />
+    <Compile Include="LTimer.cs" />
+    <Compile Include="MapFrame.cs" />
+    <Compile Include="MapGraph.cs" />
+    <Compile Include="MessageBoard.cs" />
+    <Compile Include="MouseCursor.cs" />
+    <Compile Include="MouseHandler.cs" />
+    <Compile Include="MusicEngine.cs" />
+    <Compile Include="Objective.cs" />
+    <Compile Include="OpenWorld.cs" />
+    <Compile Include="Panel.cs" />
+    <Compile Include="PlatformerPathFinder.cs" />
+    <Compile Include="Pocket.cs" />
+    <Compile Include="Point.cs" />
+    <Compile Include="PointFrame.cs" />
+    <Compile Include="Polygon.cs" />
+    <Compile Include="Polygon2.cs" />
+    <Compile Include="PossibleAssignment.cs" />
+    <Compile Include="PriorityList.cs" />
+    <Compile Include="PriorityQueue.cs" />
+    <Compile Include="ProgressBar.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueuedRenderer.cs" />
+    <Compile Include="RadioButtonPanel.cs" />
+    <Compile Include="Rectangle.cs" />
+    <Compile Include="RectIntersecter.cs" />
+    <Compile Include="Region.cs" />
+    <Compile Include="RenderingQueue.cs" />
+    <Compile Include="RotatableAnimation.cs" />
+    <Compile Include="RotatingSprite.cs" />
+    <Compile Include="RTSAbility.cs" />
+    <Compile Include="RTSAction.cs" />
+    <Compile Include="RTSAI.cs" />
+    <Compile Include="RTSBaseEditor.cs" />
+    <Compile Include="RTSBuilding.cs" />
+    <Compile Include="RTSCommander.cs" />
+    <Compile Include="RTSEffect.cs" />
+    <Compile Include="RTSMiniMap.cs" />
+    <Compile Include="RTSObject.cs" />
+    <Compile Include="RTSObjective.cs" />
+    <Compile Include="RTSResource.cs" />
+    <Compile Include="RTSScript.cs" />
+    <Compile Include="RTSTilePallet.cs" />
+    <Compile Include="RTSTurret.cs" />
+    <Compile Include="RTSUnit.cs" />
+    <Compile Include="ScrollingList.cs" />
+    <Compile Include="ScrollingList2.cs" />
+    <Compile Include="SDI.cs" />
+    <Compile Include="SectorGraph256.cs" />
+    <Compile Include="SectorGraph32.cs" />
+    <Compile Include="SFXBank.cs" />
+    <Compile Include="SFXEngine.cs" />
+    <Compile Include="SFXPlayer.cs" />
+    <Compile Include="SimpleButton.cs" />
+    <Compile Include="SimpleButton2.cs" />
+    <Compile Include="SimpleClock.cs" />
+    <Compile Include="SimpleCursor.cs" />
+    <Compile Include="SimpleDraw.cs" />
+    <Compile Include="SimpleFont.cs" />
+    <Compile Include="SimpleMenuv3.cs" />
+    <Compile Include="SimplePathFinder.cs" />
+    <Compile Include="SimplePointer.cs" />
+    <Compile Include="SimpleSlider.cs" />
+    <Compile Include="SimpleSlidingPallet.cs" />
+    <Compile Include="SimpleSprite.cs" />
+    <Compile Include="SimpleStrngBuilder.cs" />
+    <Compile Include="SimpleTimer.cs" />
+    <Compile Include="SimpleWireButton.cs" />
+    <Compile Include="SliderMenu.cs" />
+    <Compile Include="SmipleMenu.cs" />
+    <Compile Include="SnowManBox.cs" />
+    <Compile Include="Sprite4x4.cs" />
+    <Compile Include="Sprite8.cs" />
+    <Compile Include="SpriteFont.cs" />
+    <Compile Include="StatusBar.cs" />
+    <Compile Include="StickManBox.cs" />
+    <Compile Include="StringParser.cs" />
+    <Compile Include="SwitchBoard.cs" />
+    <Compile Include="TabPanel.cs" />
+    <Compile Include="Task.cs" />
+    <Compile Include="TextureBank.cs" />
+    <Compile Include="TextureLoader.cs" />
+    <Compile Include="TextWindow.cs" />
+    <Compile Include="TiledRegion.cs" />
+    <Compile Include="TileMap.cs" />
+    <Compile Include="TilePallet.cs" />
+    <Compile Include="TileSys.cs" />
+    <Compile Include="Timer.cs" />
+    <Compile Include="VaribleSectorGraph.cs" />
+    <Compile Include="VisionRays.cs" />
+    <Compile Include="Web4.cs" />
+    <Compile Include="WireFrameMap.cs" />
+    <Compile Include="WorldScene.cs" />
+    <Compile Include="XenoBuilding.cs" />
+    <Compile Include="XenoDoodad.cs" />
+    <Compile Include="XenoDoor.cs" />
+    <Compile Include="XenoExplorer.cs" />
+    <Compile Include="XenoGame.cs" />
+    <Compile Include="XenoMob.cs" />
+    <Compile Include="XenoObjective.cs" />
+    <Compile Include="XenoPlanetoid.cs" />
+    <Compile Include="XenoPortal.cs" />
+    <Compile Include="XenoSprite.cs" />
+    <Compile Include="XenoTileSys.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libFLAC-8.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="libfreetype-6.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="libjpeg-9.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="libmodplug-1.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="libogg-0.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="libpng16-16.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="libtiff-5.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="libvorbis-0.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="libvorbisfile-3.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="libwebp-4.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SDL2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SDL2_C_Sharp.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SDL2_image.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SDL2_mixer.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SDL2_ttf.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="smpeg2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="zlib1.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
